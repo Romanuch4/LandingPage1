@@ -1,26 +1,94 @@
 /*==========  Desktop First Method  ==========*/
 
-/* Desktops */
-@media only screen and (max-width : 1660px) {
-  
+@media only screen and (min-width: 1920px) {
+  .header__question__title,
+  .header__question__email,
+  .header__top__btn {
+    font-size: 16px;
+  }
+
+  .header__link,
+  .search__input,
+  .search__input::placeholder {
+    font-size: 20px;
+  }
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 1500px) {
-  
+@media only screen and (max-width: 1500px) {
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 860px) {
-  
+@media (max-width: 1199px) {
+  .header__nav {
+    position: fixed;
+    z-index: 98;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    background-color: var(--main-title-color, #384158);
+    transition: 0.4s;
+    transform: translateX(-100%);
+  }
+
+  .header__nav.active {
+    transform: translateX(0);
+  }
+
+  .header__ul {
+    flex-direction: column;
+  }
+
+  .header__li {
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+  }
+
+  .header__link {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .burger {
+    position: relative;
+    z-index: 99;
+    display: block;
+    overflow: hidden;
+  }
+
+  .header__link::before {
+    bottom: -4px;
+  }
+
+  .search__icon path {
+    fill: #fff;
+    stroke: #fff;
+  }
+
+  .search__icon {
+    background-color: var(--main-title-color, #384158);
+  }
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 600px) {
-  
+@media only screen and (max-width: 860px) {
 }
 
-/* Medium Devices, Desktops */
-@media only screen and (max-width : 420px) {
-  
+@media only screen and (max-width: 600px) {
+  .header__top__content {
+    flex-direction: column;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .header__question {
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
 }

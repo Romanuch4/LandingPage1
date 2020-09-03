@@ -24,37 +24,143 @@
 	<meta name="msapplication-navbutton-color" content="#36A26B">
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#36A26B">
-	<!--Иконка в браузере-->
+	<!--Browser icon-->
 	<link rel="shortcut icon" href="#" type="image/x-icon">
 	<!-- CSS, fonts -->
 	<link rel="stylesheet" href="css/main.css" />
 	<link rel="stylesheet" href="css/media(1).css" />
 
-	<!-- <link rel=" preconnect " href=" https://fonts.gstatic.com/ " crossorigin> -->
-	<!-- <link rel="stylesheet" href="fonts/Roboto/stylesheet.css" />
-	<link rel="stylesheet" href="fonts/CenturyGothic/stylesheet.css" /> -->
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&family=Roboto:wght@300;400;500&display=swap"
+		rel="stylesheet" />
 </head>
-<!-- img src = img data-src -->
 <!-- <a href= '/share' rel="noopener noreferrer" target="_blank"/> -->
 
-<body>
+<body class="overflow">
 	<!--Preloader-->
 	<div class="preloader">
-		<div class="sk-chase">
-			<div class="sk-chase-dot"></div>
-			<div class="sk-chase-dot"></div>
-			<div class="sk-chase-dot"></div>
-			<div class="sk-chase-dot"></div>
-			<div class="sk-chase-dot"></div>
-			<div class="sk-chase-dot"></div>
+		<div class="loader">
+			<span style="--i:1;"></span>
+			<span style="--i:2;"></span>
+			<span style="--i:3;"></span>
+			<span style="--i:4;"></span>
+			<span style="--i:5;"></span>
+			<span style="--i:6;"></span>
+			<span style="--i:7;"></span>
+			<span style="--i:8;"></span>
+			<span style="--i:9;"></span>
+			<span style="--i:10;"></span>
+			<span style="--i:11;"></span>
+			<span style="--i:12;"></span>
+			<span style="--i:13;"></span>
+			<span style="--i:14;"></span>
+			<span style="--i:15;"></span>
+			<span style="--i:16;"></span>
+			<span style="--i:17;"></span>
+			<span style="--i:18;"></span>
+			<span style="--i:19;"></span>
+			<span style="--i:20;"></span>
 		</div>
 	</div>
-	<!--==================== 1 screen ====================-->
+
+	<!--==================== First screen ====================-->
+	<header class="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__top__content flex">
+					<div class="header__question">
+						<h5 class="header__question__title">
+							Questions?
+						</h5>
+						<a href="mailto:info@thinklish.com" class="header__question__link flex">
+							<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0)">
+									<path
+										d="M12.2909 1.67288H1.71198C0.767639 1.67288 0 2.44052 0 3.38486V10.6152C0 11.5595 0.767639 12.3271 1.71198 12.3271H12.288C13.2324 12.3271 14 11.5595 14 10.6152V3.38776C14.0029 2.44342 13.2353 1.67288 12.2909 1.67288ZM13.2208 10.6152C13.2208 11.1279 12.8036 11.545 12.2909 11.545H1.71198C1.19926 11.545 0.782123 11.1279 0.782123 10.6152V3.38776C0.782123 2.87503 1.19926 2.4579 1.71198 2.4579H12.288C12.8007 2.4579 13.2179 2.87503 13.2179 3.38776V10.6152H13.2208Z"
+										fill="white" />
+									<path
+										d="M8.82928 6.9102L12.2532 3.83965C12.4126 3.69481 12.427 3.44858 12.2822 3.28637C12.1374 3.12704 11.8911 3.11256 11.7289 3.2574L7.00722 7.49534L6.08606 6.67267C6.08316 6.66977 6.08026 6.66687 6.08026 6.66398C6.05999 6.6437 6.03971 6.62632 6.01653 6.60894L2.26814 3.2545C2.10592 3.10966 1.8597 3.12415 1.71486 3.28637C1.57002 3.44858 1.58451 3.69481 1.74672 3.83965L5.21124 6.93627L1.76121 10.1661C1.60478 10.3139 1.59609 10.5601 1.74383 10.7194C1.82204 10.8005 1.92632 10.844 2.03061 10.844C2.1262 10.844 2.22179 10.8092 2.29711 10.7397L5.79928 7.46348L6.74941 8.31223C6.82473 8.37885 6.91742 8.41072 7.01012 8.41072C7.10282 8.41072 7.19841 8.37596 7.27083 8.30933L8.24703 7.43451L11.7289 10.7426C11.8042 10.815 11.9027 10.8498 11.9983 10.8498C12.1026 10.8498 12.204 10.8092 12.2822 10.7281C12.4299 10.5717 12.4241 10.3226 12.2677 10.1748L8.82928 6.9102Z"
+										fill="white" />
+								</g>
+								<defs>
+									<clipPath id="clip0">
+										<rect width="14" height="14" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+							<span class="header__question__email">info@thinklish.com</span>
+						</a>
+					</div>
+
+					<div class="header__top__btn-wrap">
+						<a href="#" class="header__top__btn">
+							Register or Login
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="header__wrap">
+			<div class="header__content container flex">
+				<a href="#" class="header__logo">
+					<picture>
+						<source type="image/webp" srcset="img/logo.webp 1x, img/logo@2x.webp 2x" />
+						<img src="img/logo.png" srcset="img/logo@2x.png 2x" alt="beer" />
+					</picture>
+				</a>
+				<div class="burger" tabindex="0">
+					<svg class="ham hamRotate ham1" viewBox="0 0 100 100" width="80">
+						<path class="line top"
+							d="m 30,33 h 40 c 0,0 9.044436,-0.654587 9.044436,-8.508902 0,-7.854315 -8.024349,-11.958003 -14.89975,-10.85914 -6.875401,1.098863 -13.637059,4.171617 -13.637059,16.368042 v 40" />
+						<path class="line middle" d="m 30,50 h 40" />
+						<path class="line bottom"
+							d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
+					</svg>
+				</div>
+				<nav class="header__nav">
+					<ul class="header__ul">
+						<li class="header__li">
+							<a href="#" class="header__link">Home</a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link">About</a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link">Courses</a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link">Instructors</a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link">News</a>
+						</li>
+						<li class="header__li">
+							<a href="#" class="header__link">Contact</a>
+						</li>
+					</ul>
+					<div class="search">
+						<svg class="search__icon" tabindex="0" width="22" height="22" viewBox="0 0 22 22" fill="none"
+							xmlns="http://www.w3.org/2000/svg">
+							<path
+								d="M20.3359 19.2109L15.7344 14.6094C16.875 13.2188 17.5625 11.4375 17.5625 9.49609C17.5625 5.04297 13.9492 1.42969 9.49609 1.42969C5.03906 1.42969 1.42969 5.04297 1.42969 9.49609C1.42969 13.9492 5.03906 17.5625 9.49609 17.5625C11.4375 17.5625 13.2148 16.8789 14.6055 15.7383L19.207 20.3359C19.5195 20.6484 20.0234 20.6484 20.3359 20.3359C20.6484 20.0273 20.6484 19.5195 20.3359 19.2109ZM9.49609 15.957C5.92969 15.957 3.03125 13.0586 3.03125 9.49609C3.03125 5.93359 5.92969 3.03125 9.49609 3.03125C13.0586 3.03125 15.9609 5.93359 15.9609 9.49609C15.9609 13.0586 13.0586 15.957 9.49609 15.957Z"
+								fill="black" stroke="black" />
+						</svg>
+						<input type="text" class="search__input" placeholder="search">
+						<div class="search__close" tabindex="0">
+							<div class="search__close__item"></div>
+							<div class="search__close__item"></div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+	</header>
 
 	<!--==================== Js ====================-->
 	<script src="js/preloader.js"></script>
 	<script src="js/menu.js"></script>
-	<script src="js/lazy-loading.js"></script>
+	<script src="js/search-input.js"></script>
 </body>
 
 </html>

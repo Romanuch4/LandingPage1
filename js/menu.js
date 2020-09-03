@@ -1,27 +1,25 @@
 (() => {
-  const buttonOpen = document.querySelector('.open-menu'),
-        buttonClose = document.querySelector('.close-menu'),
-        menu = document.querySelector('.nav');
-  
-  const toggleMenu = () => {
-    menu.classList.toggle('nav-open');
-  }
-  
-  const showMenuClick = evt => {
-    if( evt.code === 'Enter') {
-      showMenu();
-    };
+  const menuIcon = document.querySelector('.burger'),
+    menu = document.querySelector('.header__nav'),
+    body = document.querySelector('body'),
+    OPEN_MENU_CLASS = 'active',
+    OVERFLOW__BODY = 'mobile';
+
+  const showCloseMenu = () => {
+    menuIcon.querySelector('svg').classList.toggle(OPEN_MENU_CLASS);
+    menu.classList.toggle(OPEN_MENU_CLASS);
+    body.classList.toggle(OVERFLOW__BODY);
   };
 
-  const closeMenuClick = evt => {
-    if( evt.code === 'Enter') {
-      showMenu();
-    };
-  }
+  menuIcon.addEventListener('click', function (evt) {
+    showCloseMenu(evt);
+  });
 
-  buttonOpen.addEventListener('keydown', evt => showMenuClick(evt)); 
-  buttonOpen.addEventListener('click',  toggleMenu); 
-  
-  buttonClose.addEventListener('click',  toggleMenu); 
-  buttonClose.addEventListener('click',  evt => closeMenuClick(evt)); 
+  const showCloseMenuClick = (evt) => {
+    if (evt.code === 'Enter') {
+      showCloseMenu();
+    }
+  };
+
+  menuIcon.addEventListener('keydown', (evt) => showCloseMenuClick(evt));
 })();
