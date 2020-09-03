@@ -137,6 +137,11 @@ video {
   vertical-align: baseline;
 }
 
+.darkmode-layer,
+.darkmode-toggle {
+  z-index: 500;
+}
+
 /* Preloader */
 .preloader {
   position: fixed;
