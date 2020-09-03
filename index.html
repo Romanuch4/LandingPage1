@@ -157,6 +157,46 @@
 		</div>
 	</header>
 
+	<main>
+		<section class="main-screen flex">
+			<picture>
+				<source type="image/webp" srcset="img/first-bg.webp 1x, img/first-bg@2x.webp 2x" />
+				<img class="main-screen__bg" src="img/first-bg.png" srcset="img/first-bg@2x.png 2x" alt="beer" />
+			</picture>
+			<div>
+				<h1 class="main-screen__title">
+					ThinkLish
+				</h1>
+				<h2 class="main-screen__sub-title">
+					Think. Learn. Solve.
+				</h2>
+				<form class="main-screen__form">
+					<div class="main-screen__inputs">
+						<input type="text" class="main-screen__input" placeholder="Keyword Search" />
+						<select class="main-screen__input main-screen__select" name="">
+							<option value="" hidden>Unit Type</option>
+							<option value="">Type 1</option>
+							<option value="">Type 2</option>
+							<option value="">Type 3</option>
+						</select>
+						<select class="main-screen__input main-screen__select" name="">
+							<option value="" hidden>Select Course Type</option>
+							<option value="">Type 1</option>
+							<option value="">Type 2</option>
+							<option value="">Type 3</option>
+						</select>
+					</div>
+
+					<div>
+						<button class="main-screen__btn">
+							Search
+						</button>
+					</div>
+				</form>
+			</div>
+		</section>
+	</main>
+
 	<!--==================== Js ====================-->
 	<script src="js/preloader.js"></script>
 	<script src="js/menu.js"></script>
