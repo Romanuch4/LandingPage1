@@ -74,6 +74,16 @@
   .scene {
     margin-right: 30px;
   }
+
+  .lessons__item {
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+
+  .register__form {
+    margin-right: 0;
+  }
 }
 
 @media only screen and (max-width: 860px) {
@@ -109,6 +119,30 @@
   .main-screen__sub-title {
     margin-bottom: 30px;
     font-size: 28px;
+  }
+
+  .register__content .flex {
+    flex-direction: column;
+  }
+
+  .register__form {
+    margin-left: 0;
+  }
+
+  .register__left {
+    margin-bottom: 40px;
+  }
+
+  .register__title {
+    text-align: center;
+  }
+
+  .register__p {
+    text-align: center;
+  }
+
+  .register__content {
+    padding: 40px 0;
   }
 }
 
@@ -179,5 +213,50 @@
 
   .learning__item__title {
     font-size: 18px;
+  }
+
+  .lessons__item__content {
+    padding: 10px;
+  }
+
+  .lessons__item__title {
+    font-size: 18px;
+  }
+
+  .lessons__item__sub-title {
+    font-size: 14px;
+  }
+
+  .lessons__item {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .lessons__item__content {
+    width: 100%;
+  }
+
+  .lessons__img__wrap {
+    width: 100%;
+    text-align: center;
+  }
+
+  .lessons__img__wrap img {
+    width: 100%;
+  }
+
+  .lessons__footer {
+    flex-direction: column;
+  }
+
+  .lessons__footer__left,
+  .lessons__footer__center {
+    margin-bottom: 10px;
+  }
+
+  .register__form {
+    width: 100%;
+    padding: 10px 20px;
   }
 }
