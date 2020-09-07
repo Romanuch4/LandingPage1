@@ -3,7 +3,7 @@
     menu = document.querySelector('.header__nav'),
     body = document.querySelector('body'),
     OPEN_MENU_CLASS = 'active',
-    OVERFLOW__BODY = 'mobile';
+    OVERFLOW__BODY = 'overflow';
 
   const showCloseMenu = () => {
     menuIcon.querySelector('svg').classList.toggle(OPEN_MENU_CLASS);

@@ -4,12 +4,14 @@
   const searchCloseIcon = searchBlock.querySelector('.search__close');
 
   const showSearch = () => {
+    searchBlock.style.overflow = 'visible';
     searchOpenIcon.classList.add('hidden');
     searchOpenIcon.nextSibling.nextSibling.classList.add('active');
     searchCloseIcon.classList.add('active');
   };
 
   const closeSearch = () => {
+    searchBlock.style.overflow = 'hidden';
     searchCloseIcon.classList.remove('active');
     searchOpenIcon.classList.remove('hidden');
     searchOpenIcon.nextSibling.nextSibling.classList.remove('active');

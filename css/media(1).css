@@ -70,11 +70,23 @@
   .search__icon {
     background-color: var(--main-title-color, #384158);
   }
+
+  .scene {
+    margin-right: 30px;
+  }
 }
 
 @media only screen and (max-width: 860px) {
   .main-screen__input {
     width: 200px;
+  }
+
+  .learning {
+    flex-direction: column;
+  }
+
+  .scene {
+    margin-right: 0px;
   }
 }
 
@@ -155,5 +167,17 @@
   .header__content {
     padding-top: 0;
     padding-bottom: 0;
+  }
+
+  .main-screen {
+    height: calc(100vh - 155px);
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .learning__item__title {
+    font-size: 18px;
   }
 }
