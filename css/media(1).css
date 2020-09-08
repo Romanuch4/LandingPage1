@@ -259,4 +259,17 @@
     width: 100%;
     padding: 10px 20px;
   }
+
+  .summary__item__date-place {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .summary__item__time-wrap {
+    margin-bottom: 0;
+  }
+
+  .summary__item__location-wrap {
+    margin-bottom: 20px;
+  }
 }
