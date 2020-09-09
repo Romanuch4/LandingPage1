@@ -236,6 +236,10 @@ video {
   align-items: center;
 }
 
+.header {
+  position: sticky;
+}
+
 .header__top {
   background-color: var(--main-bg-color, #3f913f);
 }
