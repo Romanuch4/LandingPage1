@@ -10,6 +10,13 @@
   transform: scale(1.15);
 }
 
+*:active,
+.is-mouse-focused:focus {
+  outline: none;
+  transform: none;
+  opacity: 1;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -236,10 +243,6 @@ video {
   align-items: center;
 }
 
-.header {
-  transition: 0.5s linear;
-}
-
 .header.sticky {
   position: fixed;
   z-index: 10;
@@ -249,7 +252,6 @@ video {
   -webkit-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.55);
   -moz-box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.55);
   box-shadow: 0px 5px 5px 0px rgba(50, 50, 50, 0.55);
-  opacity: 1;
 }
 
 .header__top {
@@ -582,7 +584,7 @@ video {
   border-right: 0;
 }
 
-.main-screen__input:focus {
+.main-screen__input:not(:active):focus {
   transform: none;
   background-color: #eee;
 }
@@ -715,7 +717,7 @@ video {
 }
 
 .cube:hover,
-.cube:focus {
+.cube:not(:active):focus {
   transform: translateZ(-100px) rotateY(-90deg);
 }
 
@@ -838,7 +840,7 @@ video {
   margin-bottom: 0;
 }
 
-.lessons__item__link:focus,
+.lessons__item__link:not(:active):focus,
 .lessons__item__link:hover {
   opacity: 0.7;
 }
@@ -999,7 +1001,7 @@ video {
   filter: sepia(0);
 }
 
-.summary__item:focus {
+.summary__item:not(:active):focus {
   transform: scale(1.08);
 }
 
