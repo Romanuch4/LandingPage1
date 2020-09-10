@@ -849,6 +849,10 @@ video {
   margin-top: 40px;
 }
 
+.lessons__description {
+  max-width: 534px;
+}
+
 /*================ 4 screen ================*/
 .register {
   position: relative;
@@ -945,6 +949,8 @@ video {
   justify-content: space-between;
 }
 
+/*================ 6 screen ================*/
+
 .summary__img {
   border: 1px solid #eee;
   border-radius: 5px;
@@ -1025,4 +1031,75 @@ video {
 
 .summary__item__description {
   margin-left: 0;
+}
+
+.summary__description {
+  max-width: 612px;
+}
+
+/*================ 7 screen ================*/
+.profiles__description {
+  max-width: 952px;
+}
+
+.profiles {
+  align-items: flex-start;
+}
+
+.profiles__item {
+  position: relative;
+  width: 256px;
+  margin-top: 90px;
+  margin-right: 58px;
+  padding: 110px 16px 20px 16px;
+  background-color: #fff;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 0px 2px rgba(0, 0, 0, 0.06),
+    0px 0px 1px rgba(0, 0, 0, 0.04);
+  border-radius: 5px;
+}
+
+.profiles__item:last-child {
+  margin-right: 0;
+}
+
+.profiles__item__img-wrap {
+  position: absolute;
+  top: -90px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 180px;
+  height: 180px;
+}
+
+.profiles__item__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.profiles__item__title {
+  margin-bottom: 5px;
+  font-family: var(--main-title-font, 'Roboto Slab', sans-serif);
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--main-title-color, #384158);
+  line-height: 1.3;
+  text-align: center;
+}
+
+.profiles__item__description {
+  margin-bottom: 20px;
+  font-family: var(--main-text-font, 'Roboto', sans-serif);
+  font-size: 14px;
+  color: var(--main-text-color, #858585);
+  line-height: 180%;
+  text-align: center;
+}
+
+.profiles__item__link {
+  margin: 0 10px;
+}
+
+.profiles__item__link:hover {
+  opacity: 0.7;
 }
