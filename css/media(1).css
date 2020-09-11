@@ -98,6 +98,19 @@
   .profiles__item:nth-child(2n) {
     margin-right: 0;
   }
+
+  .news {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .news__left {
+    margin-bottom: 50px;
+  }
+
+  .news__right {
+    max-width: 623px;
+  }
 }
 
 @media only screen and (max-width: 860px) {
